@@ -1,34 +1,31 @@
 (function(){
-
-$('a').removeClass("invisible");
-
+  var navLinks = $('#topnav a');
+  enterEffect(navLinks,"bounceIn", 200);
+  $(".gallery-container").hide();
 })();
+
+// target is a jquery wrapped array of elements, anim is the animate.css class to be added and speed is the stagger
+function enterEffect(target, anim, speed){
+  target.each(function(i,v){
+    var $self = $(this);
+    var animClass = "animated "+anim;
+    setTimeout(function(){
+        $self.removeClass("invisible");
+        $self.addClass(animClass);
+    },i*speed);
+  });
+}
+
 function slideUp(){
     $(".gallery-container").fadeToggle();
     $(".pageInfo").fadeToggle();
 }
 
-jQuery(document).ready(function(){
-  $(".gallery-container").hide();
-});
-
-
-// var navLinks = $('a');
-// navLinks.each(function(i,v){
-//   var $self = $(this);
-//   setTimeout(function(){
-//       $self.removeClass("invisible");
-//       $self.addClass("animated bounceIn");
-//       console.log(i);
-//   },i*200);
-//
-// });
 function scrollUp(){
   $('html, body').animate({
     scrollTop:0
   },500);
 }
-
 
 function scrollDown(){
   var height = $(document).height();

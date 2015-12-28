@@ -3,32 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Stencils</title>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
-	<script src="js/dist/snap.svg-min.js"></script>
-
+	<script>window.$ || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
 	<link rel='shortcut icon' href='imgs/jamesfav.png' type='image/x-icon'/ >
-
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- BootStrap-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-	<!-- Optional BS theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
-
 	<!-- Font-Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="style/css/animate.css">
-
-	<!-- Custom CSS -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="style/css/my_animations.css">
 	<link rel="stylesheet" href="style/css/main.css">
-
+	<!-- Unite Core -->
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+	<!-- justified and grid -->
+	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 	<style>
 	.navlinks{
 		position:relative;
@@ -59,7 +53,6 @@
 		    <a href="animations.html" class="invisible nav-link">Animation </a><hr>
 		    <a href="art.html" class="invisible nav-link">Sketches</a><hr>
 		    <a href="about.html" class="invisible nav-link">Bio</a><hr>
-		    <a href="contact.html" class="invisible nav-link">Contact</a><hr>
 		    <a href="homies.html" class="invisible nav-link">The Homies</a><hr>
 		</div>
 
@@ -67,98 +60,119 @@
   <main>
 
 		<div class="pageInfo">
-			<i class="fa fa-arrow-down hideGall" onclick="slideUp()">View</i>
 			<h1>Stencils</h1>
 			<hr>
-			<p>All of his paper cuttings are hand drawn, and hand cut. These concepts and designs are created with only the use of a compass, protractor, straight edge, pencil, and xacto blade. Individual pieces can require a hundred plus hours to complete, making this form a guided meditation for the artist. <a onclick="slideUp();"><i class="fa fa-arrow-down animated pulse infinite "></i></a></p>
+			<p>All of his paper cuttings are hand drawn, and hand cut. These concepts and designs are created with only the use of a compass, protractor, straight edge, pencil, and xacto blade. Individual pieces can require a hundred plus hours to complete, making this form a guided meditation for the artist.</p>
+			<a onclick="slideUp();"><i class="fa fa-arrow-down animated pulse infinite "></i></a>
 		</div>
 
 		<div class="gallery-container">
 			<div class="cont">
 				<div id="gallery" style="display:none; margin:auto;">
-					<img alt="Painting of Dragonfly_Medicine" src="imgs/paper_stencilwork/thumbs/Dragonfly_MedicineT.jpg"
-					data-image="imgs/paper_stencilwork/Dragonfly_Medicine.jpg"
-					data-description="Dragonfly_Medicine">
+		    		<img alt="Painting of (First_time_painting_with_a_blade)"
+						src="imgs/paper_stencilwork/thumbs/(First_time_painting_with_a_blade)T.jpg"
+		    		data-image="imgs/paper_stencilwork/(First_time_painting_with_a_blade).jpg"
+		    		data-description="(First_time_painting_with_a_blade)">
 
-					<img alt="Painting of Entrance" src="imgs/paper_stencilwork/thumbs/EntranceT.jpg"
-					data-image="imgs/paper_stencilwork/Entrance.jpg"
-					data-description="Entrance">
+		    		<img alt="Painting of A_desert_window_within"
+						src="imgs/paper_stencilwork/thumbs/A_desert_window_withinT.jpg"
+		    		data-image="imgs/paper_stencilwork/A_desert_window_within.jpg"
+		    		data-description="A_desert_window_within">
 
-					<img alt="Painting of GateKeeper" src="imgs/paper_stencilwork/thumbs/GateKeeperT.jpg"
-					data-image="imgs/paper_stencilwork/GateKeeper.jpg"
-					data-description="GateKeeper">
+		    		<img alt="Painting of Dragonfly_Medicine"
+						src="imgs/paper_stencilwork/thumbs/Dragonfly_MedicineT.jpg"
+		    		data-image="imgs/paper_stencilwork/Dragonfly_Medicine.jpg"
+		    		data-description="Dragonfly_Medicine">
 
-					<img alt="Painting of Gatekeeper1" src="imgs/paper_stencilwork/thumbs/Gatekeeper1T.jpg"
-					data-image="imgs/paper_stencilwork/Gatekeeper1.jpg"
-					data-description="Gatekeeper1">
+		    		<img alt="Painting of Entrance"
+						src="imgs/paper_stencilwork/thumbs/EntranceT.jpg"
+		    		data-image="imgs/paper_stencilwork/Entrance.jpg"
+		    		data-description="Entrance">
 
-					<img alt="Painting of Gatekeeper2" src="imgs/paper_stencilwork/thumbs/Gatekeeper2T.jpg"
-					data-image="imgs/paper_stencilwork/Gatekeeper2.jpg"
-					data-description="Gatekeeper2">
+		    		<img alt="Painting of GateKeeper"
+						src="imgs/paper_stencilwork/thumbs/GateKeeperT.jpg"
+		    		data-image="imgs/paper_stencilwork/GateKeeper.jpg"
+		    		data-description="GateKeeper">
 
-					<img alt="Painting of Gatekeeper3" src="imgs/paper_stencilwork/thumbs/Gatekeeper3T.jpg"
-					data-image="imgs/paper_stencilwork/Gatekeeper3.jpg"
-					data-description="Gatekeeper3">
+		    		<img alt="Painting of Gatekeeper(detail_crystal)"
+						src="imgs/paper_stencilwork/thumbs/Gatekeeper(detail_crystal)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Gatekeeper(detail_crystal).jpg"
+		    		data-description="Gatekeeper(detail_crystal)">
 
-					<img alt="Painting of Joshua_Tree" src="imgs/paper_stencilwork/thumbs/Joshua_TreeT.jpg"
-					data-image="imgs/paper_stencilwork/Joshua_Tree.jpg"
-					data-description="Joshua_Tree">
+		    		<img alt="Painting of Gatekeeper(detail_eye)"
+						src="imgs/paper_stencilwork/thumbs/Gatekeeper(detail_eye)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Gatekeeper(detail_eye).jpg"
+		    		data-description="Gatekeeper(detail_eye)">
 
-					<img alt="Painting of Lotus" src="imgs/paper_stencilwork/thumbs/LotusT.jpg"
-					data-image="imgs/paper_stencilwork/Lotus.jpg"
-					data-description="Lotus">
+		    		<img alt="Painting of Gatekeeper(detail_face)"
+						src="imgs/paper_stencilwork/thumbs/Gatekeeper(detail_face)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Gatekeeper(detail_face).jpg"
+		    		data-description="Gatekeeper(detail_face)">
 
-					<img alt="Painting of Portals" src="imgs/paper_stencilwork/thumbs/PortalsT.jpg"
-					data-image="imgs/paper_stencilwork/Portals.jpg"
-					data-description="Portals">
+		    		<img alt="Painting of Joshua_Tree"
+						src="imgs/paper_stencilwork/thumbs/Joshua_TreeT.jpg"
+		    		data-image="imgs/paper_stencilwork/Joshua_Tree.jpg"
+		    		data-description="Joshua_Tree">
 
-					<img alt="Painting of Portals2" src="imgs/paper_stencilwork/thumbs/Portals2T.jpg"
-					data-image="imgs/paper_stencilwork/Portals2.jpg"
-					data-description="Portals2">
+		    		<img alt="Painting of Lotus"
+						src="imgs/paper_stencilwork/thumbs/LotusT.jpg"
+		    		data-image="imgs/paper_stencilwork/Lotus.jpg"
+		    		data-description="Lotus">
 
-					<img alt="Painting of Portals3" src="imgs/paper_stencilwork/thumbs/Portals3T.jpg"
-					data-image="imgs/paper_stencilwork/Portals3.jpg"
-					data-description="Portals3">
+		    		<img alt="Painting of Portals"
+						src="imgs/paper_stencilwork/thumbs/PortalsT.jpg"
+		    		data-image="imgs/paper_stencilwork/Portals.jpg"
+		    		data-description="Portals">
 
-					<img alt="Painting of Redtail1" src="imgs/paper_stencilwork/thumbs/Redtail1T.jpg"
-					data-image="imgs/paper_stencilwork/Redtail1.jpg"
-					data-description="Redtail1">
+		    		<img alt="Painting of Portals_2"
+						src="imgs/paper_stencilwork/thumbs/Portals_2T.jpg"
+		    		data-image="imgs/paper_stencilwork/Portals_2.jpg"
+		    		data-description="Portals_2">
 
-					<img alt="Painting of Redtail2" src="imgs/paper_stencilwork/thumbs/Redtail2T.jpg"
-					data-image="imgs/paper_stencilwork/Redtail2.jpg"
-					data-description="Redtail2">
+		    		<img alt="Painting of Portals_3"
+						src="imgs/paper_stencilwork/thumbs/Portals_3T.jpg"
+		    		data-image="imgs/paper_stencilwork/Portals_3.jpg"
+		    		data-description="Portals_3">
 
-					<img alt="Painting of Redtail3" src="imgs/paper_stencilwork/thumbs/Redtail3T.jpg"
-					data-image="imgs/paper_stencilwork/Redtail3.jpg"
-					data-description="Redtail3">
+		    		<img alt="Painting of Redtail_(Guidance)"
+						src="imgs/paper_stencilwork/thumbs/Redtail_(Guidance)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Redtail_(Guidance).jpg"
+		    		data-description="Redtail_(Guidance)">
 
-					<img alt="Painting of Slow_Magic1" src="imgs/paper_stencilwork/thumbs/Slow_Magic1T.jpg"
-					data-image="imgs/paper_stencilwork/Slow_Magic1.jpg"
-					data-description="Slow_Magic1">
+		    		<img alt="Painting of Redtail_(Guidance)_(detail)"
+						src="imgs/paper_stencilwork/thumbs/Redtail_(Guidance)_(detail)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Redtail_(Guidance)_(detail).jpg"
+		    		data-description="Redtail_(Guidance)_(detail)">
 
-					<img alt="Painting of Slow_Magic2" src="imgs/paper_stencilwork/thumbs/Slow_Magic2T.jpg"
-					data-image="imgs/paper_stencilwork/Slow_Magic2.jpg"
-					data-description="Slow_Magic2">
+		    		<img alt="Painting of Redtail_(Guidance)_(detail_tail)"
+						src="imgs/paper_stencilwork/thumbs/Redtail_(Guidance)_(detail_tail)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Redtail_(Guidance)_(detail_tail).jpg"
+		    		data-description="Redtail_(Guidance)_(detail_tail)">
 
-					<img alt="Painting of Union" src="imgs/paper_stencilwork/thumbs/UnionT.jpg"
-					data-image="imgs/paper_stencilwork/Union.jpg"
-					data-description="Union">
+		    		<img alt="Painting of Slow_Magic_(Wheel)"
+						src="imgs/paper_stencilwork/thumbs/Slow_Magic_(Wheel)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Slow_Magic_(Wheel).jpg"
+		    		data-description="Slow_Magic_(Wheel)">
 
-					<img alt="Painting of Untitled" src="imgs/paper_stencilwork/thumbs/UntitledT.jpg"
-					data-image="imgs/paper_stencilwork/Untitled.jpg"
-					data-description="Untitled">
+		    		<img alt="Painting of Slow_Magic_(Wheel_layers)"
+						src="imgs/paper_stencilwork/thumbs/Slow_Magic_(Wheel_layers)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Slow_Magic_(Wheel_layers).jpg"
+		    		data-description="Slow_Magic_(Wheel_layers)">
 
-					<img alt="Painting of Untitled1" src="imgs/paper_stencilwork/thumbs/Untitled1T.jpg"
-					data-image="imgs/paper_stencilwork/Untitled1.jpg"
-					data-description="Untitled1">
+		    		<img alt="Painting of Union"
+						src="imgs/paper_stencilwork/thumbs/UnionT.jpg"
+		    		data-image="imgs/paper_stencilwork/Union.jpg"
+		    		data-description="Union">
 
-					<img alt="Painting of desert_window" src="imgs/paper_stencilwork/thumbs/desert_windowT.jpg"
-					data-image="imgs/paper_stencilwork/desert_window.jpg"
-					data-description="desert_window">
+		    		<img alt="Painting of Untitled_(detail)"
+						src="imgs/paper_stencilwork/thumbs/Untitled_(detail)T.jpg"
+		    		data-image="imgs/paper_stencilwork/Untitled_(detail).jpg"
+		    		data-description="Untitled_(detail)">
 
-					<img alt="Painting of first" src="imgs/paper_stencilwork/thumbs/firstT.jpg"
-					data-image="imgs/paper_stencilwork/first.jpg"
-					data-description="first">
+		    		<img alt="Painting of Untitled_"
+						src="imgs/paper_stencilwork/thumbs/Untitled_T.jpg"
+		    		data-image="imgs/paper_stencilwork/Untitled_.jpg"
+		    		data-description="Untitled_">
 				</div>
 		  </div>
 			<p>Images Property of James Sauter</p>
@@ -168,24 +182,13 @@
 
 <script src="js/src/artPages.js"></script>
 	<script type="text/javascript">
-
-		jQuery(document).ready(function(){
-			jQuery("#gallery").unitegallery({
+		$(document).ready(function(){
+			$("#gallery").unitegallery({
 				tiles_type:"justified",
 			  tiles_justified_space_between:5
-
 			});
-
-
 		});
-
 	</script>
-
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
-
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script> -->
 </body>
-
-
-
 </html>

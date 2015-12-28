@@ -5,8 +5,7 @@
 	<title>James Sauter's Art</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
-	<script src="js/dist/snap.svg-min.js"></script>
-
+<!-- <script src="js/dist/snap.svg-min.js"></script> -->
 	<link rel='shortcut icon' href='imgs/jamesfav.png' type='image/x-icon'/ >
 
 	<!-- Latest compiled and minified JavaScript -->
@@ -181,7 +180,7 @@
 	    <a href="animations.html" class="invisible nav-link">Animation </a><hr>
 	    <a href="art.html" class="invisible nav-link">Sketches</a><hr>
 	    <a href="about.html" class="invisible nav-link">Bio</a><hr>
-	    <a href="contact.html" class="invisible nav-link">Contact</a><hr>
+
 	    <a href="homies.html" class="invisible nav-link">The Homies</a><hr>
 	</div>
 
@@ -191,35 +190,27 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
 <script>
 
-$(window).load(function(){
-	// $('a').hide();
-	$('.loading').fadeOut();
-	var navLinks = $('a');
-	navLinks.each(function(i,v){
-		var $self = $(this);
-		setTimeout(function(){
-				$self.removeClass("invisible");
-				$self.addClass("animated bounceIn");
-				console.log(i);
-		},i*200);
+	$(window).load(function(){
 
-	});
-	var letters = $('.letter');
-	letters.each(function(i,v){
-		var $self = $(this);
-		setTimeout(function(){
-				$self.attr('class',"svgLetterAnim");
-		},i*200);
+		$('.loading').fadeOut();
+		function enterEffect(target, anim, speed){
+			target.each(function(i,v){
+				var $self = $(this);
+				setTimeout(function(){
+						$self.removeClass("invisible");
+						$self.addClass(anim);
+				},i*speed);
+			});
+		}
+		var navLinks = $('a');
+		enterEffect(navLinks,"animated bounceIn", 200);
 	});
 
-});
 	$(document).ready(function($) {
-		var tar1 = document.getElementById("top");
-		var tar2 = document.getElementById("bottom");
+		// var tar1 = document.getElementById("top");
+		// var tar2 = document.getElementById("bottom");
 		var tar4 = document.getElementById("bottom2");
 		var tar3 = document.getElementById("bgd");
-
-
 		var x,y,mx,my,speed3,tarpos,winmedx,winmedy, tempx, tempy;
 		winmedx = window.innerWidth/2,
 		winmedy = window.innerHeight/2;
@@ -231,8 +222,8 @@ $(window).load(function(){
 				my = e.pageY;
 				x = 5*(winmedx-mx);
 				y = 2*(winmedy-my);
-				speed1 = 10;
-				speed2 = 15;
+				// speed1 = 10;
+				// speed2 = 15;
 				speed3 = 50;
 				speed4 = 70;
 				// TweenLite.to(tar1, 2, {x:x/speed1, y:y/speed1, ease:Power1.easeOut});
@@ -240,11 +231,6 @@ $(window).load(function(){
 				TweenLite.to(tar3, 3, {x:x/speed3, y:y/speed3, ease:Back.linear});
 				TweenLite.to(tar4, 3, {x:x/speed4, y:y/speed4, ease:Back.linear});
 			});
-
-			setInterval(function(){
-
-			},100);
-
 	});
 </script>
 </html>
