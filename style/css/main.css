@@ -1,0 +1,524 @@
+@font-face
+{
+    font-family: gondola;
+    src: url(../../fonts/Gondola-SD/Gondola_SD.ttf);
+}
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+}
+.animcont
+{
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+}
+#bgd
+{
+    position: absolute;
+    top: -40%;
+    left: -30%;
+
+    width: 140%;
+    height: 140%;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    background-size: 100% 100%;
+}
+#bottom2
+{
+    position: absolute;
+    left: -10%;
+
+    overflow: visible;
+
+    width: 120%;
+    height: 120%;
+
+    background-size: 100% 100%;
+}
+#bottom
+{
+    position: absolute;
+    top: -2%;
+    left: -5%;
+
+    overflow: visible;
+
+    width: 110%;
+    height: 105%;
+
+    transform: rotate(1.8deg);
+
+    opacity: .3;
+    background-image: url('../../imgs/overlays/overlay2.png');
+    background-size: 100% 100%;
+}
+#top
+{
+    position: absolute;
+    top: -2%;
+    left: -5%;
+
+    overflow: visible;
+
+    width: 110%;
+    height: 105%;
+
+    transform: rotate(1.8deg);
+
+    opacity: .9;
+    background-image: url('../../imgs/overlays/overlay1.png');
+    background-size: 100% 100%;
+}
+@font-face {
+    font-family: caviar;
+    src: url(fonts/Caviar-Dreams/CaviarDreams.ttf);
+}
+.contactForm h1{
+	font-weight:normal;
+}
+.contactForm .l label{
+	width:40%;
+	text-align:right;
+	display:inline-block;
+}
+.contactForm .infocont input{
+	display:inline-block;
+}
+.contactForm .infocont{
+  text-indent:5px;
+	width:45%;
+	display:inline-block;
+}
+.contactForm .r{
+	float: right;
+
+}
+.contactForm input, textarea{
+	border:1px solid rgba(150,150,150,1);
+	border-radius:7px;
+	-webkit-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+	max-width:100%;
+}
+.infoCont a:active{
+  color:rgba(200,200,200,1);
+}
+.infoCont a:visited{
+  color:rgba(150,150,150,1);
+}
+.infoCont a:link{
+  margin-top: 5px;
+}
+.contactForm textarea{
+	-webkit-transition: 50ms;
+	-o-transition: 50ms;
+	transition: 50ms;
+}
+.contactForm input:hover, textarea:hover{
+	box-shadow: 0px 0px 7px rgba(0,0,250,.3);
+}
+.contactForm input:focus, textarea:focus{
+	box-shadow: 0px 0px 7px rgba(0,0,250,.5);
+
+}
+.contactForm{
+	border:1px solid rgba(150,150,150,1);
+	min-width:900px;
+	width:70%;
+	margin:30px auto;
+	padding:10px 30px;
+	border-radius:10px;
+}
+.contactForm fieldset{
+	border-radius:10px;
+
+}
+.inline-video__controls
+{
+    position: fixed;
+    bottom: 100px;
+    left: 30px;
+}
+h1
+{
+    color: white;
+}
+.xy
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: blue;
+}
+a
+{
+    font-family: helvetica;
+    color: white;
+}
+
+.loading
+{
+    position: absolute;
+    z-index: 100;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+}
+.gifdisplay
+{
+    width: 300px;
+    height: 300px;
+    /*background-color:white;*/
+    margin: auto;
+    margin-top: 25vh;
+
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+
+    border: rgba(250,100,250,1) 5px solid;
+    border-radius: 100%;
+}
+#loadingimg
+{
+    position: fixed;
+    z-index: 102;
+    top: 50%;
+    left: 40%;
+}
+.gifdisplay span
+{
+    position: relative;
+    top: 42%;
+}
+.gifdisplay
+{
+    font-family: helvetica;
+    font-size: 40px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: rgba(250,100,250,1);
+}
+
+.logoCont
+{
+    position: fixed;
+    z-index: 10000;
+    top: 20px;
+    left: 20px;
+
+    overflow: visible;
+}
+
+svg path
+{
+    -webkit-transition: 2s;
+         -o-transition: 2s;
+            transition: 2s;
+            transition: all 400ms linear;
+
+    fill: rgba(230,100,150,.3);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 7px;
+}
+svg path:hover
+{
+    -webkit-transition: 2s;
+         -o-transition: 2s;
+            transition: 2s;
+
+    fill: rgba(100,0,200,.9);
+}
+svg .glow
+{
+    transition: all 400ms linear;
+
+    fill: rgba(150,100,100,1);
+    filter: url(#glow);
+}
+svg .glow:hover
+{
+    fill: rgba(255,0,205,1);
+    filter: url(#glow);
+}
+
+svg
+{
+    width: 23vw;
+    height: 12vw;
+}
+main{
+  position:relative;
+  width:100%;
+  min-width: 650px;
+  margin:0 auto;
+  max-width: 2000px
+}
+#animationsCont iframe{
+  margin:auto;
+  width:80%; height:50vw;
+}
+#animationsCont {
+  text-align: center;
+}
+.navlinks hr
+{
+    display: none;
+}
+
+.navlinks
+{
+
+    position:relative;
+    bottom: 30px;
+
+    width: 100vw;
+font-family: gondola;
+    text-align: center;
+}
+.navlinks a
+{
+    font-size: 25px;
+
+    text-decoration: none;
+
+    color: rgba(200,200,250,1);
+}
+.nav-link
+{
+    font-family: gondola;
+
+    position: relative;
+    top: 0;
+
+    margin: auto 1%;
+
+    -webkit-transition: 2s;
+         -o-transition: 2s;
+            transition: 2s;
+    /*text-shadow: rgb(255, 250, 255) 0px 0px 10px, rgb(255, 250, 255) 0px 0px 20px, rgb(255, 250, 255) 0px 0px 30px, rgb(150,100,100) 0px 0px 40px, rgb(150,100,100) 0px 0px 70px, rgb(150,100,100) 0px 0px 80px, rgb(150,100,100) 0px 0px 100px;*/
+            transition: all 400ms linear;
+
+    color: white;
+
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255,255,255,.8);
+}
+.nav-link:hover
+{
+    top: -10px;
+
+    color: red;
+    text-shadow: rgba(255, 255, 255,.8) 0 0 10px, rgba(255, 255, 255,.8) 0 0 20px, rgba(255, 255, 255,.8) 0 0 30px, rgb(255, 0, 222) 0 0 40px, rgb(255, 0, 222) 0 0 70px, rgb(255, 0, 222) 0 0 80px, rgb(255, 0, 222) 0 0 100px;
+
+    -webkit-text-fill-color: rgb(200, 200, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+.pageInfo{
+  position:relative;
+  color:white;
+  font-size: 20px;
+  width:50%;
+  margin:20vh auto 30vh auto;
+  text-align: center;
+}
+.pageInfo hr{
+  width:97%;
+}
+.pageInfo i.fa{
+  margin-top: 30px;
+  font-size: 40px ;
+  display:block;
+}
+.pageInfo a{
+  transition:2s;
+}
+.pageInfo a:hover{
+  color:rgba(200,200,255,1);
+}
+.pageInfo i{
+  transition:2s;
+}
+
+.gallery-container{
+  position:absolute;
+  top:100px;
+  background-color: black;
+  width:100%;
+  min-width: 700px;
+  margin:auto;
+  text-align: center;
+  font-size: 30px;
+}
+.pageInfo .listPage-item{
+  display:inline;
+  margin-left: 20px;
+}
+.pageInfo a{
+  text-decoration: none;
+  font-size: 30px;
+  text-align: right;
+}
+.pageInfo a:hover{
+  text-decoration: none;
+}
+.pageInfo i.selector{
+  display:inline;
+  margin:0;
+}
+.clear{
+  clear:both;
+}
+.selector{
+  opacity:0;
+
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+li{
+  list-style: none;
+}
+
+li:hover .selector{
+  opacity:1;
+}
+/*Contact Form*/
+@font-face {
+    font-family: caviar;
+    src: url(fonts/Caviar-Dreams/CaviarDreams.ttf);
+}
+.contactForm h1{
+	font-weight:normal;
+}
+.contactForm .l label{
+	width:20%;
+	text-align:right;
+	display:inline-block;
+}
+.contactForm .infocont input{
+	display:inline-block;
+}
+.contactForm .infocont{
+	width:90%;
+	margin:auto;
+
+}
+.contactForm input{
+  width:70%;
+}
+.contactForm input, textarea{
+	border:1px solid rgba(150,150,150,1);
+	border-radius:7px;
+	-webkit-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+	max-width:100%;
+}
+.contactForm textarea{
+	-webkit-transition: 50ms;
+	-o-transition: 50ms;
+	transition: 50ms;
+}
+.contactForm input:hover, textarea:hover{
+	box-shadow: 0px 0px 7px rgba(0,0,250,.3);
+}
+.contactForm input:focus, textarea:focus{
+	box-shadow: 0px 0px 7px rgba(0,0,250,.5);
+
+}
+.invisible{
+  visibility: hidden;
+}
+#commentsCont{
+  text-align: center;
+}
+#formControl{
+text-align: center;
+}
+.contactForm{
+	border:1px solid rgba(150,150,150,1);
+	min-width:900px;
+	width:70%;
+	margin:100px auto;
+	padding:10px 30px;
+	border-radius:10px;
+}
+.contactForm fieldset{
+	border-radius:10px;
+
+}
+@media all and (orientation:portrait)
+{
+  .pageInfo{margin:30px auto;}
+    .animcont
+    {
+        height: 60vh;
+    }
+
+    .navlinks{
+
+      margin:10px auto;
+        position: relative;
+        z-index: 90;
+        bottom: 0;
+
+        width: 100%;
+        height: 40vh;
+
+        background-color: black;
+    }
+    .navlinks hr
+    {
+        width: 90%;
+
+        opacity: .5;
+    }
+    .navlinks ul
+    {
+        margin-top: 5%;
+    }
+    .navlinks a
+    {
+        font-size: 4vh; display: block;transition: 500ms; text-decoration: none;
+    }
+    .navlinks a:hover
+    {
+        font-size: 5vh; color: rgba(200,200,250,1);
+    }
+
+    .navlinks li
+    {
+        text-align: center;
+    }
+    .pageInfo i.selector{
+      display:none;
+
+    }
+    #animationsCont iframe{
+      margin:auto;
+      margin-top: 40vh;
+      width:80%; height:50vw;
+
+    }
+}

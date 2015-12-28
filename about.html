@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Mr. Sauter</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
+	<script src="js/dist/snap.svg-min.js"></script>
+
+	<link rel='shortcut icon' href='imgs/jamesfav.png' type='image/x-icon'/ >
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Optional BS theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="style/css/animate.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style/css/my_animations.css">
+	<link rel="stylesheet" href="style/css/main.css">
+
+
+	<style>
+	.navlinks{
+		margin:50px auto;
+	}
+	.pageInfo{
+		margin-top:13vh;
+		margin-bottom:20vh;
+	}
+
+	#bio-pic .imgcont{margin:auto;border-radius: 100%; width:450px; height: 450px;overflow:hidden;}
+	#bio-pic .imgcont img{margin-left: -30%;}
+	.pageInfo hr{
+		width:60%;
+	}
+	.content{
+		position:relative;
+	}
+	a i.fa-arrow-down,a i.fa-arrow-up{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<!-- <a href="#topnav" id="menuin"><img src="imgslo/icons/menuin2.png" alt="Click For Menu"></a> -->
+	<nav id="topnav">
+		<div class="navlinks">
+		    <a href="index.com" class="invisible nav-link"><i class="fa fa-home"></i></a><hr>
+		    <a href="stencils.com" class="invisible nav-link">Papercutting</a><hr>
+		    <a href="animations.com" class="invisible nav-link">Animation </a><hr>
+		    <a href="art.com" class="invisible nav-link">Sketches</a><hr>
+		    <a href="about.com" class="invisible nav-link">Bio</a><hr>
+		    <a href="contact.com" class="invisible nav-link">Contact</a><hr>
+		    <a href="homies.com" class="invisible nav-link">The Homies</a><hr>
+		</div>
+	</nav>
+  <main>
+		<div class="content">
+		<div id="bio-pic">
+		  <div class="imgcont">
+		      <img src="imgs/biopicopt.jpg" alt="Picture of the Artist" />
+		  </div>
+
+		</div>
+		<div >
+		<div class="pageInfo">
+			<a onclick="scrollDown();"><i class="fa fa-arrow-down animated pulse infinite "></i></a></p>
+			<br>
+			<h1>About James</h1>
+			<hr>
+			<p>James is a multi-faceted artist with interests and skills that span a wide array of mediums and forms. Though he works primarily within the realms animation, paper arts, and illustration, he never shies away from experiencing new forms of expression. He is also familiar with the projection and mural arts.
+			<br><hr>
+			Residing in Santa Cruz CA, this 26 yr old native of Philadelphia continues to explore the forms that connect us all in order to create work that reflects the patterns of the universe within and around us.
+			<a onclick="scrollUp();"><i class="fa fa-arrow-up animated pulse infinite "></i></a></p>
+		</div>
+		</div>
+</div>
+
+
+
+	</main>
+
+	<script src="js/src/artPages.js"></script>
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+</body>
+
+</html>

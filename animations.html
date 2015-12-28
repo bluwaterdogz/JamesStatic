@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- <link rel="shortcut icon" type="image/png" href="imgs/nebskifavicon.png"/> -->
+	<!-- script included in header for html verification, normally would be included at bottom -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
+	<script src="js/dist/snap.svg-min.js"></script>
+
+	<link rel='shortcut icon' href='imgs/jamesfav.png' type='image/x-icon'/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/dist/jquery-1.11.3.min.js">\x3C/script>');</script>
+	<script src="js/dist/snap.svg-min.js"></script>
+
+	<link rel='shortcut icon' href='imgs/jamesfav.png' type='image/x-icon'/ >
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Optional BS theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="style/css/animate.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style/css/my_animations.css">
+	<link rel="stylesheet" href="style/css/main.css">
+
+	<title>Animations</title>
+	<style>
+	.gallery-container{
+		font-size: 40px;
+		position:absolute;
+		top:100px;
+		background-color: black;
+		width:100%;
+		margin:auto;
+		text-align: center;
+	}
+  .navlinks{
+		position:relative;
+		margin:50px auto 0 auto;
+	}
+	.toggleGal{
+		position:relative;
+	}
+	a i.fa-arrow-down{
+		text-align: center;
+	}
+	@media all and (orientation:portrait)
+	{
+			/*.gallery-container{
+				bottom:-40vh;
+				left:0;
+				height:40vh;
+			}*/
+	}
+	#topnav{
+
+	}
+	</style>
+</head>
+<body>
+
+<main>
+	<div id="topnav">
+		<div class="navlinks">
+		    <a href="index.com" class="invisible nav-link"><i class="fa fa-home"></i></a><hr>
+		    <a href="stencils.com" class="invisible nav-link">Papercutting</a><hr>
+		    <a href="animations.com" class="invisible nav-link">Animation </a><hr>
+		    <a href="art.com" class="invisible nav-link">Sketches</a><hr>
+		    <a href="about.com" class="invisible nav-link">Bio</a><hr>
+		    <a href="contact.com" class="invisible nav-link">Contact</a><hr>
+		    <a href="homies.com" class="invisible nav-link">The Homies</a><hr>
+		</div>
+	</div>
+  <div class="pageInfo">
+		<i class="fa fa-arrow-down hideGall" onclick="slideUp()">View</i>
+  <h1>Animation</h1>
+  <hr>
+  <p>Hand drawn illustrations are digitized, colored, then animated into life with the use of After Effects, Illustrator, and Photoshop.
+		<a onclick="slideUp();"><i class="fa fa-arrow-down  animated pulse infinite ">Hide</i></a>
+	</p>
+</div>
+		<div class="gallery-container">
+			<div id="animationsCont">
+	        <iframe  src="https://www.youtube.com/embed/Cl3Qf2_sNoc" frameborder="0" allowfullscreen></iframe>
+	    </div>
+			<a onclick="slideUp();"><i class="fa fa-arrow-up  animated pulse infinite"></i></a>
+			<p>Images Property of James Sauter</p>
+		</div>
+</main>
+
+	<script src="js/src/artPages.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+</body>
+</html>
